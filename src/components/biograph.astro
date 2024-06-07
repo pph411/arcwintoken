@@ -1,6 +1,15 @@
+---
+import { Image } from "astro:assets";
+import PicsMonroe from "~/assets/m18.jpg";
+---
+
 <section class="grid place-items-center place-content-center">
     <div class="flex flex-col text-center w-3/5 bg-gradient-to-r from-rose-100 to-teal-100 rounded-sm m-10">
-        <img src=/src/assets/m18.jpg alt="Foto de perfil" class="place-self-center w-2/5 object-cover rounded-lg shadow-lg mt-10 mb-7">
+        <Image 
+            src={PicsMonroe} alt="Foto de perfil" 
+            class="place-self-center w-2/5 object-cover rounded-lg shadow-lg mt-10 mb-7" />
+            
+        
         <h2 class="text-2xl font-bold mb-3 text-black">Marilyn Monroe</h2>  
         <div class="flex flex-col mb-7 [&>h4]:text-black [&>h4]:font-bold [&>h4]:tracking-tighter">
             <h4>ACTRESS</h4>
@@ -14,3 +23,4 @@
         </div>
     </div>
 </section>
+
