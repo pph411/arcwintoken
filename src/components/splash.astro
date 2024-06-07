@@ -9,7 +9,7 @@ const widths = [350, 700];
 const sizes = "(min-width: 480px) 42vw, 67vw";
 ---
 
-<section class="relative h-full bg-black">
+<section class="relative w-screen h-full bg-black sm:h-full">
   
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
@@ -24,7 +24,7 @@ const sizes = "(min-width: 480px) 42vw, 67vw";
       class="w-full max-w-full self-center sm:w-36/44 sm:self-auto sm:justify-self-center"
     >
       <Image
-        class="h-full w-full object-cover justify-items-center "
+        class="h-full w-full sm:w-3/5 object-cover justify-items-center "
         src={pumpfunImage}
         widths={widths}
         sizes={sizes}
