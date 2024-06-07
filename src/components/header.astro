@@ -29,7 +29,7 @@ const sizes = "(min-width: 40px) 60px, 80px";
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-m" href={url}>
+                <a class="text-m" href={url} target="_blank" rel="noopener noreferrer">
                   {title}
                 </a>
               </li>
@@ -66,7 +66,7 @@ const sizes = "(min-width: 40px) 60px, 80px";
               {
                 navItems.map(({ title, url }) => (
                   <li>
-                    <a class="block py-4 text-center text-xl" href={url}>
+                    <a class="block py-4 text-center text-xl" href={url} target="_blank" rel="noopener noreferrer">
                       {title}
                     </a>
                   </li>
