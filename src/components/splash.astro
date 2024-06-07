@@ -11,20 +11,18 @@ const sizes = "(min-width: 480px) 42vw, 67vw";
 
 <section class="relative w-screen h-full bg-black sm:h-full">
   
-  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
-    <HeroImage />
-  </div>
+  
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
-    <div>
+    
       <h2
-        class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
+        class="flex flex-col w-11/12 text-center gap-2 sm:gap-4 sm:self-auto sm:justify-self-end"
       >
       <div
       id="signature"
-      class="w-full max-w-full self-center sm:w-36/44 sm:self-auto sm:justify-self-center"
+      class="w-full max-w-10/12 h-full self-center sm:w-36/44 sm:self-auto sm:justify-self-center p-5"
     >
       <Image
-        class="h-full w-full sm:w-3/5 object-cover justify-items-center "
+        class="h-full w-full object-cover"
         src={pumpfunImage}
         widths={widths}
         sizes={sizes}
@@ -33,24 +31,24 @@ const sizes = "(min-width: 480px) 42vw, 67vw";
       />
     </div>
         <div
-          class="text-white text-center font-bold tracking-tighter text-2xl md:text-2xl m-10"
+          class="text-white font-bold tracking-tighter text-lg md:text-2xl m-5"
         >
         The token for fans and people with great taste.
           <br /> 
-          <br /><p class="text-xl">
+          <br />
+          <p class="w-11/12 m-auto">
           Iconic and <span class="text-primary">Marilyn Monroe</span> is the same word when you think about one of the finest ladies in history and <span class="text-primary">$MONROE</span> is the ticker <span class="text-primary">for those who appreciate timeless beauty</span> now on Solana!
           </p>
           
         </div>
       </h2>
       
-    </div>
     <div
       id="logo"
-      class="w-full max-w-xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
+      class="w-8/12 h-5/5 self-start sm:w-8/12 sm:self-auto sm:justify-self-start"
     >
       <Image
-        class="h-full w-full object-cover"
+        class="h-full w-full object-contain"
         src={astronautImage}
         widths={widths}
         sizes={sizes}
