@@ -1,0 +1,94 @@
+<style> 
+    .slider {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    
+    .slider .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(320px * 14);
+        white-space: wrap;
+    }
+    
+    .slider .slide {
+        width: 320px;
+        height: 380px;
+        overflow: hidden
+    }
+    
+    .slider .slide img {
+        width: 100%;
+        height: 100%;
+        transition: all 700ms ease-in-out;
+    
+    }
+    .slider .slide img:hover {
+        transform: scale(1.1);
+        opacity: 0.95;
+        cursor: pointer;
+    }
+    
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(calc(200px * 7));
+            transform: translateX(calc(200px * 7));
+        }
+    }
+</style>
+
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="/src/assets/m2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m13.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m6.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m8.jpg" alt="">
+        </div>
+        <div class="slide">
+        <img src="/src/assets/m12.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m10.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m17.jpg" alt="">
+        </div>
+
+            <div class="slide">
+            <img src="/src/assets/m2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m13.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m6.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m8.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m12.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/src/assets/m10.jpg" alt="">
+        </div>
+        <div class="slide">
+        <img src="/src/assets/m17.jpg" alt="">
+        </div>
+    </div>
+</div>
