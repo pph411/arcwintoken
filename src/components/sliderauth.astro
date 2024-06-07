@@ -1,3 +1,7 @@
+---
+import VideoMonroe from "~/assets/monroevid.mp4";
+
+---
 
 <!-----
     <video
@@ -27,13 +31,14 @@
 
 </style>
 <div class="video-text-container">
+    
     <video
         slot="background"
         class="object-cover h-200% w-screen"
         autoplay
         loop
         muted
-        src="/src/assets/monroevid.mp4">
+        src={VideoMonroe}>
     </video>
     <div id="text-overlay" class="text-3xl font-bold text-white">$MONROE</div>
 </div>
