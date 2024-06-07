@@ -3,14 +3,14 @@ import { Image } from "astro:assets";
 import astronautImage from "~/assets/monroe.png";
 import pumpfunImage from "~/assets/signture.png";
 import HeroImage from "~/components/hero-image.astro";
-import Starfield from "~/components/fallinglights.astro";
+
 
 const widths = [350, 700];
 const sizes = "(min-width: 480px) 42vw, 67vw";
 ---
 
 <section class="relative h-full bg-black">
-  <Starfield />
+  
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
