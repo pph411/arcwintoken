@@ -1,13 +1,28 @@
 ---
 import { Image } from "astro:assets";
 import astronautImage from "~/assets/monroe.png";
+import heroImage from "~/assets/hero-phones.png";
 import pumpfunImage from "~/assets/signture.png";
 import HeroImage from "~/components/hero-image.astro";
 
 
-const widths = [350, 700];
-const sizes = "(min-width: 480px) 42vw, 67vw";
+const widths = [250, 500];
+const sizes = "(min-width: 250px) 36vw, 56vw";
 ---
+<style>
+@media (max-width: 640px) {
+  /* CSS styles for screens smaller than or equal to 640px */
+  section {
+      height: fit-content;
+    }
+}
+@media (min-width: 640px) {
+  /* CSS styles for screens larger than or equal to 640px */
+  section {
+    height: 100%;
+  }
+}
+</style>
 
 <section class="relative w-screen h-full bg-black sm:h-full">
   
@@ -45,11 +60,24 @@ const sizes = "(min-width: 480px) 42vw, 67vw";
       
     <div
       id="logo"
-      class="w-7/12 h-4/5 md:h-5/5 self-center sm:w-10/12 sm:self-auto sm:justify-self-start"
+      class="hidden sm:block w-7/12 h-3/5 md:h-5/5 self-center sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
       <Image
         class="h-full w-full object-contain"
         src={astronautImage}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="Marilyn Floating"
+      />
+    </div>
+    <div
+      id="logo"
+      class="sm:hidden w-3/5 h-5/5 self-center shadow-lg pb-10"
+    >
+      <Image
+        class="h-full w-full object-contain rounded-full "
+        src={heroImage}
         widths={widths}
         sizes={sizes}
         loading="eager"
