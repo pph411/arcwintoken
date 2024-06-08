@@ -4,42 +4,37 @@ import { Image } from "astro:assets";
 import moonImage from "~/assets/moon.png";
 import ContentSection from "~/components/content-section.astro";
 import type { FeatureItem } from "~/types";
-
-const features: Array<FeatureItem> = [
-  {
-    title: "Chart",
-    description:
-      "Fair launch, we are still far from a baill fund but we get there.",
-    icon: "mdi:handshake",
-  },
-  {
-    title: "Buy now",
-    description:
-      "We can go higher, this is only were everything begins.",
-    icon: "mdi:feather",
-  },
-];
 ---
+<style>
+  p {
+    font-size: 12px;
+  }
+</style>
 
-<ContentSection title="Contract address" id="intro" >
-  <p class="font-bold tracking-tighter text-2xl md:text-2xl sm:text-xl mb-20 sm:mb-10">FFoEvwrMh8oX9WKZ2CSoJ5ZM4iTZEpe5ivZA3j79VvP9</p>
 
+<section
+  class="flex flex-col sm:flex-row h-[200px] items-center justify-center"
+>
+  <ContentSection />
   <div class="flex gap-8">
     <div class="flex flex-grow">
       <a
         href="https://jup.ag/swap/SOL-FFoEvwrMh8oX9WKZ2CSoJ5ZM4iTZEpe5ivZA3j79VvP9" target="_blank" rel="noopener noreferrer"
-        class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+        class="w-[150px] flex items-center justify-center gap-3  bg-black border border-current px-6 py-4 rounded hover:shadow-xl hover:delay-150 hover:duration-300"
       >
-        <span class="text-xl font-semibold"> Buy now </span>
+        <span class="text-lg"> Buy now </span>
       </a>
     </div>
     <div class="flex flex-grow">
       <a
         href="https://dexscreener.com/solana/8y1txyrhsabxcmnxwmmgusomttkjklqfuktfv8h3ax39" target="_blank" rel="noopener noreferrer"
-        class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+        class="w-[150px] flex items-center justify-center gap-3  bg-black border border-current px-6 py-4 rounded hover:shadow-xl hover:delay-150 hover:duration-300"
       >
-        <span class="text-xl font-semibold"> Chart </span>
+        <span class="text-lg"> Chart </span>
       </a>
     </div>
   </div>
-</ContentSection>
+</section>
+
+
+
