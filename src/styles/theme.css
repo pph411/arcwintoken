@@ -1,7 +1,7 @@
 [data-theme="light"] {
   --color-primary: theme("colors.blue.200");
   --color-secondary: theme("colors.blue.400");
-  --color-text: theme("colors.gray.900");
+  --color-text: theme("colors.white");
   --color-text-offset: theme("colors.gray.600");
   --color-background: theme("colors.gray.50");
   --color-background-offset: theme("colors.gray.100");
