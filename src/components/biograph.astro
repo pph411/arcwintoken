@@ -1,26 +1,56 @@
 ---
 import { Image } from "astro:assets";
-import PicsMonroe from "~/assets/m18.jpg";
+import winterImageb2 from "~/assets/batman.jpg";
 ---
 
-<section class="grid place-items-center place-content-center">
-    <div class="flex flex-col text-center w-5/5 h-full md:w-4/5 max-w-screen-md bg-gradient-to-r from-rose-100 to-teal-100 rounded sm:m-10">
-        <Image 
-            src={PicsMonroe} alt="Foto de perfil" 
-            class="place-self-center w-2/5 sm:w-3/5 object-cover rounded-lg shadow-lg mt-10 mb-7" />
+<section class="grid place-items-center place-content-center w-5/5 h-screen bg-slate-950">
+    <div class="flex flex-col place-content-center text-center w-5/5  md:w-4/5 max-w-screen-md rounded pt-10 mx-auto sm:m-10">
+        <div class="flex place-content-center mx-auto mb-10">
             
-        
-        <h2 class="text-xl sm:text-2xl font-bold mb-3 text-black">Marilyn Monroe</h2>  
-        <div class="flex flex-col mb-7 [&>h4]:text-black [&>h4]:font-bold [&>h4]:tracking-tighter">
-            <h4>ACTRESS</h4>
-            <h4>1926-1962</h4>
+            <Image 
+                src={winterImageb2} alt="Foto de perfil" 
+                class="secondary-image w-5/12 sm:w-5/12 md:w-6/12 object-cover rounded-lg shadow-lg mt-3 mx-1" />
+            
         </div>
-        <div class="w-4/5 sm:w-4/5 place-self-center text-s mb-5 text-black italic tracking-tight">
-            Born Norma Jeane Mortenson, Marilyn Monroe overcame dificul childhood to became one of the wolrd's most enduring sex symbols. Her films grossed more than $200 million. She died of a drug overdose in 1962 at the age of 36.
+        <h2 class="subtitle place-self-center text-xl sm:text-2xl font-bold mb-3 text-left text-white">What is the winter arc?</h2>  
+        <div class="flex flex-col place-self-center text-left  w-4/5 mb-7 [&>h4]:text-white [&>h4]:tracking-tighter">
+            <h4 class="main-text text-sm md:text-base mx-3">A challenge where we use the coldest and darkest days to visualize, re-focus, and reach our commitments and desitions. Challenge yourself to become harder, stronger a focused version of yourself. $Winter is a community run token on the solana blockchain. </h4>
         </div>
-        <div class="text-xs sm:text-md mx-3 mb-10 text-black tracking-wide">
-            "I don't want to make money, I just want to be wonderful."
+        <div class="secondary-text w-4/5 sm:w-4/5 place-self-center text-xs md:text-sm text-left mb-5 text-white italic tracking-tight">
+            Winter arc is upon us, and now is the time were we set goals and gain dicipline.
         </div>
-    </div>
+        <div class="hidden sm:block secondary-text text-xs sm:text-base mx-16 mb-5 text-white tracking-wide">
+            "A time where every man must face the mental and physical challenges of winter. A time to put your head down and get things done."
+        </div>
+        <div class="secondary-text text-xs sm:text-sm mb-10 text-white tracking-wide">
+            Winter Contract Address: <br/> <span class="select-all ca sm:text-sm">4j2gUEmfbSAacvSSd6yXo8yEzXCAUVeoXrqLVV3apump </span>
+        </div>
+    </div> 
 </section>
+
+<style>
+    @keyframes appear {
+        from {
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .secondary-image, .subtitle, .main-text, .secondary-text {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 10%;
+    }
+
+    @media (max-width: 450px) {
+  /* Styles for small screens */
+  .ca {
+      font-size: 11px;
+  }
+}
+</style>
 

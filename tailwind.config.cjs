@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-cover': "url('/src/assets/baki1.jpg)",
+      },
       fontFamily: {
         sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
       },

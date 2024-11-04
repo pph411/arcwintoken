@@ -1,15 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import { Icon } from "astro-icon/components";
-import pumpfunImage from "~/assets/pill.png";
+import logoImage from "~/assets/winter-logo.jpg";
+import { Icon } from "astro-icon/components"; 
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Buy now", url: "https://jup.ag/swap/SOL-FFoEvwrMh8oX9WKZ2CSoJ5ZM4iTZEpe5ivZA3j79VvP9" },
-  { title: "Chart", url: "https://dexscreener.com/solana/8y1txyrhsabxcmnxwmmgusomttkjklqfuktfv8h3ax39" },
-  { title: "Twitter", url: "https://x.com/MonroeonSol" },
-  { title: "Telegram", url: "https://web.telegram.org/a/#-1002224984232" }
+  { title: "Buy now", url: "https://jup.ag/swap/SOL-4j2gUEmfbSAacvSSd6yXo8yEzXCAUVeoXrqLVV3apump" },
+  { title: "Chart", url: "https://dexscreener.com/solana/6vjgblscr9hhotmcrcpkpnmcz3rbyackzcuqx5zkvaax" },
+  { title: "X", url: "https://x.com/WINTERARCSOLANA" },
+  { title: "Telegram", url: "https://t.me/winterarcsolana" }
 ]
 const widths = [60, 100];
 const sizes = "(min-width: 40px) 60px, 80px";
@@ -17,11 +17,20 @@ const sizes = "(min-width: 40px) 60px, 80px";
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-10 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
->
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
-    
-  </a>
+  class="sticky top-0 z-10 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white bg-slate-950"
+> 
+<div class="flex gap-2">
+  <Image
+        class="h-14 w-14 object-contain rounded-full"
+        src={logoImage}
+
+        loading="eager"
+        alt="Marilyn Floating" 
+      />
+  <p class="flex items-center gap-3 font-bold">
+    WINTER ARC
+  </p>
+</div>
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
@@ -47,8 +56,8 @@ const sizes = "(min-width: 40px) 60px, 80px";
       </button>
       <ThemeSwitcher />
     </div>
-    <div id="menu-modal" class="modal hidden" aria-hidden="true">
-      <div class="fixed inset-0 bg-default px-8 py-4 text-default">
+    <div id="menu-modal" class="modal hidden animate__fadeInUp" aria-hidden="true">
+      <div class="show fixed w-10/12 justify-self-end inset-0 bg-slate-900 px-8 py-4 text-default">
         <div class="space-y-4" role="dialog" aria-modal="true">
           <header class="text-right">
             <button
@@ -126,6 +135,7 @@ const sizes = "(min-width: 40px) 60px, 80px";
     #open-nav-button {
       display: none;
     }
+
   </style>
 </noscript>
 
