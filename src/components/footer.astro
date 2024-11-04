@@ -16,7 +16,7 @@ const navItems: Array<NavItem> = [
       {
         navItems.map(({ title, url }) => (
           <li class="group">
-            <a class="grow text-sm p-3 text-gray-400 font-medium transition duration-300 hover:text-white hover:underline hover:decoration-white hover:decoration-2" href={url} target="_blank" rel="noopener noreferrer">
+            <a class="grow text-sm md:text-base p-3 text-gray-400 font-medium transition duration-300 hover:text-white hover:underline hover:decoration-white hover:decoration-2" href={url} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
             <span
@@ -26,6 +26,6 @@ const navItems: Array<NavItem> = [
         ))
       }
     </ul>
-    <p class="place-self-center text-xs text-gray-500 mt-5"> Made for $WINTER ARC CTO</p>
+    <p class="place-self-center text-xs md:text-sm text-gray-500 mt-5"> Made for $WINTER ARC CTO</p>
   </div>
 </footer>
